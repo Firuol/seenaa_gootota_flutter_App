@@ -9,10 +9,6 @@ class HeroApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hero History',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: HeroGridPage(),
     );
   }
@@ -20,17 +16,16 @@ class HeroApp extends StatelessWidget {
 
 class HeroGridPage extends StatelessWidget {
   final List<HeroData> heroes = [
-    HeroData('Hero 1', 'assets/hero1.jpg', 'Long description of Hero 1...'),
-    HeroData('Hero 2', 'assets/hero2.jpg', 'Long description of Hero 2...'),
+    HeroData('bilille mahibuba', 'assets/images/hero1.jpg',
+        "bbilcdddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkleeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrtyuuuuuuuuuuuuuuuuuuuile"),
+    HeroData('Jal Battee Urgessa', 'assets/images/hero2.jpg',
+        'Long description of Hero 2...'),
     // Add more heroes here
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Hero History'),
-      ),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
